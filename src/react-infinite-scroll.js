@@ -62,4 +62,5 @@ InfiniteScroll.setDefaultLoader = function (loader) {
   InfiniteScroll._defaultLoader = loader;
 };
 
-module.exports = InfiniteScroll
+window.React.addons.InfiniteScroll = InfiniteScroll;
+//module.exports = InfiniteScroll
