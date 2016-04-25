@@ -5,7 +5,6 @@ function topPosition(domElt) {
   return domElt.offsetTop + topPosition(domElt.offsetParent);
 }
 
-
 var InfiniteScroll = React.createClass({
   displayName: 'InfiniteScroll',
   propTypes: {
@@ -62,5 +61,4 @@ InfiniteScroll.setDefaultLoader = function (loader) {
   InfiniteScroll._defaultLoader = loader;
 };
 
-window.React.addons.InfiniteScroll = InfiniteScroll;
-//module.exports = InfiniteScroll
+module.exports = InfiniteScroll;
